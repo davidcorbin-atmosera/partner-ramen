@@ -45,6 +45,7 @@ jobs:
         path: .
         
   prod:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download
